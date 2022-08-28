@@ -18,4 +18,6 @@ const a = prompt('Один з останніх переглянутіх філь
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
-console.log(personalMovieDB);
+console.log(personalMovieDB); 
+
+
