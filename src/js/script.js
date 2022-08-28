@@ -18,6 +18,13 @@ const a = prompt('Один з останніх переглянутіх філь
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
+for (let i = 0; i < 2; i++) {
+    const a = prompt('Один з останніх переглянутіх фільмів?', ''),
+          b = prompt('Як оцінете цей фільм?', '');
+
+    personalMovieDB.movies[a] = b;
+};
+
 console.log(personalMovieDB); 
 
 
