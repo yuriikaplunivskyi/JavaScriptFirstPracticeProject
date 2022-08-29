@@ -10,19 +10,19 @@ const personalMovieDB = {
     privat: false
 };
 
-const a = prompt('Один з останніх переглянутіх фільмів?', ''),
-      b = prompt('Як оцінете цей фільм?', ''),
-      c = prompt('Один з останніх переглянутіх фільмів?', ''),
-      d = prompt('Як оцінете цей фільм?', '');
-
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
 
 for (let i = 0; i < 2; i++) {
     const a = prompt('Один з останніх переглянутіх фільмів?', ''),
           b = prompt('Як оцінете цей фільм?', '');
 
-    personalMovieDB.movies[a] = b;
+    if (a != null && b != null && a != '' && b != '' && a.length <50) {
+        personalMovieDB.movies[a] = b;
+        console.log('done');
+    } else {
+        console.log('error');
+        i--;
+    }
+
 };
 
 console.log(personalMovieDB); 
