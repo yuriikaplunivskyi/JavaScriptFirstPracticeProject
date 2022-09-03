@@ -22,8 +22,17 @@ for (let i = 0; i < 2; i++) {
         console.log('error');
         i--;
     }
+}
 
-};
+if (personalMovieDB.count < 10) {
+    console.log("Переглянуто досить таки мало фільмів");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+    console.log("Ви типовий глядач");
+} else if (personalMovieDB.count >= 30) {
+    console.log("Ви кіноман!");
+} else {
+    console.log("Здається виникла помилка");
+}
 
 console.log(personalMovieDB); 
 
